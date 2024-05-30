@@ -14,10 +14,6 @@ A feature-rich calculator app built with Flutter, offering both dark and light m
 
 ![Demo Gif](demo/demo.gif)
 
-## Demo
-
-![Demo Video](demo/demo.mp4)
-
 ## Getting Started
 
 ### Prerequisites
