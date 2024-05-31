@@ -20,31 +20,35 @@ class OutPutSection extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 40),
             child: GetBuilder<ThemeController>(builder: (controller) {
-              return AdvancedSwitch(
-                controller: controller.switcherController,
-                activeImage: const AssetImage('assets/images/day_sky.png'),
-                inactiveImage: const AssetImage('assets/images/night_sky.jpg'),
-                activeColor: Colors.green,
-                inactiveColor: Colors.grey,
-                activeChild: Text(
-                  'Day',
-                  style: GoogleFonts.ubuntu(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 17,
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: AdvancedSwitch(
+                  controller: controller.switcherController,
+                  activeImage: const AssetImage('assets/images/day_sky.png'),
+                  inactiveImage:
+                      const AssetImage('assets/images/night_sky.jpg'),
+                  activeColor: Colors.green,
+                  inactiveColor: Colors.grey,
+                  activeChild: Text(
+                    'Day',
+                    style: GoogleFonts.ubuntu(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 17,
+                    ),
                   ),
-                ),
-                inactiveChild: Text(
-                  'Night',
-                  style: GoogleFonts.ubuntu(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
+                  inactiveChild: Text(
+                    'Night',
+                    style: GoogleFonts.ubuntu(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
                   ),
+                  borderRadius: const BorderRadius.all(Radius.circular(1000)),
+                  width: 100.0,
+                  height: 45.0,
+                  enabled: true,
+                  disabledOpacity: 0.5,
                 ),
-                borderRadius: const BorderRadius.all(Radius.circular(1000)),
-                width: 100.0,
-                height: 45.0,
-                enabled: true,
-                disabledOpacity: 0.5,
               );
             }),
           ),
@@ -59,9 +63,8 @@ class OutPutSection extends StatelessWidget {
                   child: Text(
                     controller.userInput,
                     style: GoogleFonts.ubuntu(
-                      color: themeController.isDark
-                          ? Colors.white
-                          : Colors.black,
+                      color:
+                          themeController.isDark ? Colors.white : Colors.black,
                       fontSize: 38,
                     ),
                   ),
@@ -72,9 +75,8 @@ class OutPutSection extends StatelessWidget {
                     controller.userOutput,
                     style: GoogleFonts.ubuntu(
                       fontWeight: FontWeight.bold,
-                      color: themeController.isDark
-                          ? Colors.white
-                          : Colors.black,
+                      color:
+                          themeController.isDark ? Colors.white : Colors.black,
                       fontSize: 60,
                     ),
                   ),
