@@ -10,9 +10,9 @@ A feature-rich calculator app built with Flutter, offering both dark and light m
 - Answer memory recall
 - Dark and light theme support
 
-## Screenshots
+## DEMO
 
-![Demo Gif](demo/demo.gif)
+![Demo Gif](demo/Demo.gif)
 
 ## Getting Started
 
