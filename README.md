@@ -25,7 +25,7 @@ Ensure you have Flutter installed on your machine. You can download it from the 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/calcy_calculatorapp.git
+    https://github.com/dcaayushd/Calcy-Calculator-App.git
     cd calcy_calculatorapp
     ```
 
